@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e9bda8f3cf1492fa74926a530f6f70, type: 3}
+  m_Name: ShootBrain2Human
+  m_EditorClassIdentifier: 
+  brainParameters:
+    vectorObservationSize: 149
+    numStackedVectorObservations: 1
+    vectorActionSize: 06000000
+    cameraResolutions: []
+    vectorActionDescriptions:
+    - inputHorizontal
+    - inputVertical
+    - rotateDirection
+    - fire
+    - weaponType
+    - rotateSpeed
+    vectorActionSpaceType: 1
+  keyContinuousPlayerActions:
+  - key: 32
+    index: 3
+    value: 1
+  - key: 116
+    index: 2
+    value: -1
+  - key: 121
+    index: 2
+    value: 1
+  - key: 49
+    index: 5
+    value: 0
+  - key: 50
+    index: 5
+    value: 0.2
+  - key: 51
+    index: 5
+    value: 0.4
+  - key: 52
+    index: 5
+    value: 0.6
+  - key: 53
+    index: 5
+    value: 0.8
+  axisContinuousPlayerActions:
+  - axis: Horizontal
+    index: 0
+    scale: 1
+  - axis: Vertical
+    index: 1
+    scale: 1
+  discretePlayerActions: []
